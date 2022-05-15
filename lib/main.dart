@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wordle_clone/widgets/wordle_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  const providerScopedApp =  ProviderScope(child: MyApp());
+  FlutterError.onError = (FlutterErrorDetails details) {
+
+  };
+  runApp(providerScopedApp);
 }
 
 class MyApp extends StatelessWidget {
@@ -12,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Elitmus Assignment',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -20,4 +25,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
