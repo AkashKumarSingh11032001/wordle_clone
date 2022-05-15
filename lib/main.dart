@@ -1,5 +1,5 @@
-  import 'package:flutter/material.dart';
-import 'package:wordle_clone/widgets/home_page.dart';
+import 'package:flutter/material.dart';
+import 'package:wordle_clone/widgets/wordle_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const WordlePage(),
     );
   }
 }
