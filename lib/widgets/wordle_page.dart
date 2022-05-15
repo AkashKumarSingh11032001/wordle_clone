@@ -12,6 +12,7 @@ class WordlePage extends StatelessWidget {
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           children: [WordleTitleBar(),WordleGrid(),WordleKeyboard()],
         ),
