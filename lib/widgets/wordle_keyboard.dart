@@ -24,7 +24,7 @@ class WordleKeyboard extends StatelessWidget {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            for (var i in "_zxcvbnm<".split("")) WordleKey(i)
+            for (var i in "+zxcvbnm-".split("")) WordleKey(i)
           ],
         ),
       ],

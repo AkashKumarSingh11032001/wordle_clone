@@ -11,13 +11,13 @@ class WordleKey extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     Widget keyCap;
     double width = 50;
-    if (letter == "_") {
-      keyCap = Icon(
+    if (letter == "+") {
+      keyCap = const Icon(
         Icons.keyboard_return,
         size: 18,
       );
-    } else if (letter == "<") {
-      keyCap = Icon(
+    } else if (letter == "-") {
+      keyCap = const Icon(
         Icons.backspace_outlined,
         size: 18,
       );
@@ -37,8 +37,8 @@ class WordleKey extends ConsumerWidget {
         width: width,
         height: 55,
         alignment: Alignment.center,
-        margin: EdgeInsets.all(3),
-        decoration: BoxDecoration(
+        margin: const EdgeInsets.all(3),
+        decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(4)),
             color: Color.fromARGB(44, 44, 44, 44)),
         child: keyCap ,
